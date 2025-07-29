@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Fatima Chekfeh</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#experience">Conocomientos</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Fatima Chekfeh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre mí</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Conocimientos</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="img/fatima.jpg" alt="Fatima Chekfeh foto perfil" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hola, soy</p>
+        <h1 class="title">Fatima Chekfeh</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('img/FatimaChekfehCV.pdf', '_blank')"
+          >
+            Descargar CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Informacion de contacto
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="img/linkedin.png"
+            alt="Mi Perfil de LinkedIn"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/fatima-chalsab'"
+          />
+          <img
+            src="img/github.png"
+            alt="Mi Perfil Github"
+            class="icon"
+            onclick="location.href='https://github.com/fatti13'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Para Más Información</p>
+      <h1 class="title">Sobre mí</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="img/frontend_developer.jpg"
+            alt="Foto Perfil"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="img/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiencia</h3>
+              <p>400 horas de Prácticas de Empresa como <br />Frontend Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="img/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Formación</h3>
+              <p>Escuela de Arte de Granada<br />Diseño Y Desarrollo Web</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              ¡Buenas! Soy Fatima Chekfeh, una apasionada del desarrollo web con un enfoque especial en el diseño y la creación de experiencias digitales atractivas. Mi viaje comenzó en la Escuela de Arte de Granada, donde adquirí habilidades sólidas en diseño y desarrollo web. Desde entonces, he estado trabajando en proyectos que combinan creatividad y funcionalidad. También estudié un curso de 150 horas de Diseño Gráfico en el que adquirí conocomientos tanto de Photoshop como de Ilustrator.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Descubre Mis Conocimientos</p>
+      <h1 class="title">Conocimientos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML5</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS3</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma UI/UX</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+							<article>
+                <img
+                  src="img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>WordPress</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+							<article>
+                <img
+                  src="img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Prestashop</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+							<article>
+                <img
+                  src="img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Gulp</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+							<article>
+                <img
+                  src="img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git&GitHub</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Descubre Mis Proyectos Recientes</p>
+      <h1 class="title">Proyectos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="img/proyecto1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Proyecto 1</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/fatti13/resposiveWebsite'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://fatti13.github.io/resposiveWebsite/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="img/proyecto2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Proyecto 2</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/fatti13/pocionesMagicas'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://fatti13.github.io/pocionesMagicas/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="img/proyecto3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Proyecto 3</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.behance.net/gallery/231151403/Fisioterapia'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.behance.net/gallery/231151403/Fisioterapia'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Pongámonos En Contacto</p>
+      <h1 class="title">Contacta Conmigo Ahora</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="img/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:fatich13595@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="img/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/fatima-chalsab">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#experience">Conocimientos</a></li>
+            <li><a href="#projects">Proyetos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-text">
+				<p>© 2025 Fatima Chekfeh. Todos los derechos reservados.</p>
+				<p>Diseñado por Fatima Chekfeh</p>
+			</div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
